@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unicorn Micro-Utilities — High-Performance Browser Tools</title>
+  <meta name="description" content="100% private, client-side browser extensions and developer utilities. Fast, privacy-first, zero cloud bloat.">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: #111827;
+      --border: #1f2937;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-green: #10b981;
+      --accent-gold: #f59e0b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background: var(--bg); color: var(--text); padding: 40px 20px; line-height: 1.6; }
+    .container { max-width: 1080px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 48px; border-bottom: 1px solid var(--border); padding-bottom: 32px; }
+    .badge { display: inline-block; background: #0369a1; color: #e0f2fe; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 9999px; text-transform: uppercase; margin-bottom: 12px; }
+    h1 { font-size: 34px; font-weight: 800; color: #ffffff; margin-bottom: 12px; }
+    p.lead { font-size: 17px; color: var(--text-muted); max-width: 680px; margin: 0 auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; margin-bottom: 48px; }
+    .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 14px; padding: 26px; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5); }
+    .card-top { margin-bottom: 20px; }
+    .card h2 { font-size: 20px; font-weight: 700; color: #ffffff; margin-bottom: 8px; }
+    .card p.desc { font-size: 13px; color: var(--text-muted); margin-bottom: 16px; min-height: 40px; }
+    .price-tag { display: flex; justify-content: space-between; align-items: baseline; background: #0f172a; padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; }
+    .price-tag .price { font-size: 22px; font-weight: 800; color: var(--accent-green); }
+    .price-tag .free-tier { font-size: 12px; color: var(--accent); font-weight: 600; }
+    ul.features { list-style: none; font-size: 12px; color: var(--text-muted); margin-bottom: 20px; }
+    ul.features li { margin-bottom: 6px; }
+    ul.features li b { color: var(--text); }
+    .btn-group { display: flex; flex-direction: column; gap: 8px; }
+    .btn { display: block; text-align: center; padding: 11px 16px; border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none; cursor: pointer; transition: all 0.15s; }
+    .btn-download { background: #2563eb; color: #ffffff; }
+    .btn-download:hover { background: #1d4ed8; }
+    .btn-pro { background: linear-gradient(135deg, #d97706 0%, #b45309 100%); color: #ffffff; }
+    .btn-pro:hover { background: linear-gradient(135deg, #b45309 0%, #92400e 100%); }
+    .install-box { background: #1e293b; border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-top: 32px; }
+    .install-box h3 { font-size: 18px; color: #38bdf8; margin-bottom: 12px; }
+    .install-box ol { margin-left: 20px; font-size: 13px; color: #cbd5e1; }
+    .install-box li { margin-bottom: 6px; }
+    footer { text-align: center; margin-top: 48px; font-size: 12px; color: var(--text-muted); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Open-Source Digital Utilities</span>
+      <h1>Unicorn Micro-Utilities</h1>
+      <p class="lead">Client-side, privacy-first browser utilities and developer tools. Fast, lightweight, zero telemetry.</p>
+    </header>
+
+    <div class="grid">
+      <!-- 1. TubeMark -->
+      <div class="card">
+        <div class="card-top">
+          <h2>TubeMark</h2>
+          <p class="desc">Extracts and formats YouTube video transcripts into clean, timestamped Markdown for Obsidian and Notion with 1 click.</p>
+          <div class="price-tag">
+            <span class="free-tier">Core: 100% Free</span>
+            <span class="price">$7.99 <span style="font-size:12px;color:#94a3b8;font-weight:400;">Pro</span></span>
+          </div>
+          <ul class="features">
+            <li>✅ <b>1-Click Extract</b>: Parses transcript directly from YouTube tab</li>
+            <li>✅ <b>Clickable Timestamps</b>: Auto-links video jumps</li>
+            <li>✨ <b>Pro Upgrade</b>: Auto-export to Obsidian vault & chapter summaries</li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <a class="btn btn-download" href="https://github.com/Aubyte-Admin/unicorn-extensions-store/releases/download/v1.0.0/yt_markdown_clipper-firefox-amo-v1.0.0.zip">⬇️ Download Firefox Add-on (Free)</a>
+          <a class="btn btn-download" style="background:#334155;" href="https://github.com/Aubyte-Admin/unicorn-extensions-store/releases/download/v1.0.0/yt_markdown_clipper-gumroad-bundle-v1.0.0.zip">⬇️ Download Chrome / Brave Bundle</a>
+          <a class="btn btn-pro" href="https://checkout.lemonsqueezy.com/buy/yt_markdown_clipper">⭐ Buy Lifetime Pro ($7.99)</a>
+        </div>
+      </div>
+
+      <!-- 2. Zodify -->
+      <div class="card">
+        <div class="card-top">
+          <h2>Zodify</h2>
+          <p class="desc">Instant client-side JSON to Zod schema and TypeScript interface generator. 100% private, runs entirely in browser memory.</p>
+          <div class="price-tag">
+            <span class="free-tier">Core: 100% Free</span>
+            <span class="price">$8.99 <span style="font-size:12px;color:#94a3b8;font-weight:400;">Pro</span></span>
+          </div>
+          <ul class="features">
+            <li>✅ <b>Zero-Latency</b>: Converts JSON in real-time</li>
+            <li>✅ <b>TypeScript & Zod</b>: Generates validation schemas & types</li>
+            <li>✨ <b>Pro Upgrade</b>: Date coercion rules & multi-file bundle export</li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <a class="btn btn-download" href="https://github.com/Aubyte-Admin/unicorn-extensions-store/releases/download/v1.0.0/json_zod_studio-firefox-amo-v1.0.0.zip">⬇️ Download Firefox Add-on (Free)</a>
+          <a class="btn btn-download" style="background:#334155;" href="https://github.com/Aubyte-Admin/unicorn-extensions-store/releases/download/v1.0.0/json_zod_studio-gumroad-bundle-v1.0.0.zip">⬇️ Download Chrome / Brave Bundle</a>
+          <a class="btn btn-pro" href="https://checkout.lemonsqueezy.com/buy/json_zod_studio">⭐ Buy Lifetime Pro ($8.99)</a>
+        </div>
+      </div>
+
+      <!-- 3. TabSweep -->
+      <div class="card">
+        <div class="card-top">
+          <h2>TabSweep</h2>
+          <p class="desc">Smart browser tab consolidator: groups open tabs neatly by domain, removes duplicates, and frees up system memory.</p>
+          <div class="price-tag">
+            <span class="free-tier">Core: 100% Free</span>
+            <span class="price">$6.99 <span style="font-size:12px;color:#94a3b8;font-weight:400;">Pro</span></span>
+          </div>
+          <ul class="features">
+            <li>✅ <b>Domain Grouping</b>: Neatly clusters tabs by site</li>
+            <li>✅ <b>Deduplication</b>: Automatically closes redundant tabs</li>
+            <li>✨ <b>Pro Upgrade</b>: Scheduled tab auto-snooze & memory recovery logs</li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <a class="btn btn-download" href="https://github.com/Aubyte-Admin/unicorn-extensions-store/releases/download/v1.0.0/tab_declutter_ai-firefox-amo-v1.0.0.zip">⬇️ Download Firefox Add-on (Free)</a>
+          <a class="btn btn-download" style="background:#334155;" href="https://github.com/Aubyte-Admin/unicorn-extensions-store/releases/download/v1.0.0/tab_declutter_ai-gumroad-bundle-v1.0.0.zip">⬇️ Download Chrome / Brave Bundle</a>
+          <a class="btn btn-pro" href="https://checkout.lemonsqueezy.com/buy/tab_declutter_ai">⭐ Buy Lifetime Pro ($6.99)</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Installation Instructions -->
+    <div class="install-box">
+      <h3>Quick 30-Second Installation Guide</h3>
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 10px;">
+        <div>
+          <h4 style="color:#ffffff; margin-bottom:8px;">Firefox Installation:</h4>
+          <ol>
+            <li>Download the Firefox Add-on ZIP above.</li>
+            <li>Open Firefox and go to <code>about:debugging#/runtime/this-firefox</code></li>
+            <li>Click <b>"Load Temporary Add-on"</b> and select <code>manifest.json</code> from the zip.</li>
+          </ol>
+        </div>
+        <div>
+          <h4 style="color:#ffffff; margin-bottom:8px;">Chrome / Brave / Edge Installation:</h4>
+          <ol>
+            <li>Download the Chrome Bundle ZIP and extract it.</li>
+            <li>Go to <code>chrome://extensions</code> (or <code>edge://extensions</code>).</li>
+            <li>Enable <b>Developer mode</b> (top-right toggle).</li>
+            <li>Click <b>"Load unpacked"</b> and choose the extracted folder.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Built with privacy-first client-side architecture · 100% Open-Source · Maintained by Aubyte-Admin</p>
+    </footer>
+  </div>
+</body>
+</html>
