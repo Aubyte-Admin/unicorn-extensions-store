@@ -47,8 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   buyProBtn.addEventListener("click", () => {
-    // Opens Lemon Squeezy checkout with zero server requirement
-    const checkoutUrl = "https://checkout.lemonsqueezy.com/buy/json_zod_studio?embed=1";
+    // Opens PayPal checkout directly for Auybte
+    const checkoutUrl = "https://paypal.me/Auybte/8.99USD";
     chrome.tabs.create({ url: checkoutUrl });
   });
 
